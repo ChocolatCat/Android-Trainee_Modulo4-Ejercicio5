@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">convertidora_two</string>
+    <string name="name">Nombre</string>
+    <string name="lastname">Apellido</string>
+    <string name="mail">Email</string>
+    <string name="password">Contrasena</string>
+    <string name="save">Guardar</string>
+</resources>
