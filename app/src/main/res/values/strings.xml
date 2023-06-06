@@ -3,6 +3,7 @@
     <string name="name">Nombre</string>
     <string name="lastname">Apellido</string>
     <string name="mail">Email</string>
-    <string name="password">Contrasena</string>
+    <string name="password">Contrasena (8 caracteres minimo)</string>
     <string name="save">Guardar</string>
+    <string name="invalid_data">Datos invalidos o falta algun dato</string>
 </resources>
