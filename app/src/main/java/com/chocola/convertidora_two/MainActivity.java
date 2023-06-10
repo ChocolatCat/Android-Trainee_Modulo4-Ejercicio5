@@ -1,6 +1,7 @@
 package com.chocola.convertidora_two;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewbinding.ViewBinding;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,17 +10,22 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.chocola.convertidora_two.databinding.ActivityMainBinding;
+
 public class MainActivity extends AppCompatActivity {
+
+    private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        EditText txtName = findViewById(R.id.editTextTextPersonName);
-        EditText txtLastname = findViewById(R.id.editTextTextPersonName2);
-        EditText txtMail = findViewById(R.id.editTextTextEmailAddress);
-        EditText txtPassword = findViewById(R.id.editTextTextPassword);
-        Button btnSave = findViewById(R.id.button);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        EditText txtName = binding.editTextTextPersonName;
+        EditText txtLastname = binding.editTextTextPersonName2;
+        EditText txtMail = binding.editTextTextEmailAddress;
+        EditText txtPassword = binding.editTextTextPassword;
+        Button btnSave = binding.button;
 
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
